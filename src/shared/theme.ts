@@ -1,4 +1,4 @@
-const theme = {
+export const theme = {
   colors: {
     primary: '#3498db', // Blue
     secondary: '#2ecc71', // Green
@@ -37,5 +37,3 @@ const theme = {
     lg: '0 10px 15px rgba(0, 0, 0, 0.1)',
   },
 }
-
-export default theme

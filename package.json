@@ -12,9 +12,11 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage",
+    "test:coverage": "vitest run && vitest run --coverage",
     "test:ci": "vitest run",
     "type-check": "tsc --noEmit"
+
+  
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
