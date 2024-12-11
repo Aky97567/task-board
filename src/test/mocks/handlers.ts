@@ -1,7 +1,7 @@
-import { rest } from 'msw'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { http } from 'msw'
 
-export const handlers = [
-  rest.get('/api/tasks', (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json([{ id: 1, title: 'Test Task', status: 'TODO' }]))
-  }),
-]
+http.get('/resource', ({ request }) => {
+  const url = new URL(request.url)
+  const productId = url.searchParams.get('id')
+})
